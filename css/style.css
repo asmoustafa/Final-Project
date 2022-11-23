@@ -1,5 +1,11 @@
-  /* Homework styling */
-.skip {
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* skip to content button */
+  .skip {
     /* color:black; */
     color:black;
     background: brown;
@@ -38,7 +44,7 @@ a:hover, a:focus, .active a{
     header {
         background-color: #2b2b2b;
         border-bottom: 3px solid #373737;
-        margin-bottom: 50px;
+        /* margin-bottom: 50px; */
     }
 
     /*  sets header to flex styling */
@@ -49,15 +55,13 @@ a:hover, a:focus, .active a{
     }
 
     .header_logo {
-        height: 100px;
-        width: 75px;
-        margin-right: 15px;
-        margin-bottom: 20px;
-        margin-top: 20px;
+        height: 75px;
+        width: 56.5px;
+        margin: 10px 20px 10px 0;
     }
 
   h1 {
-      font-family: 'Times New Roman', 'sans serif', Times;
+      font-family: Serif, 'Times New Roman', 'sans serif', Times;
       font-weight: bold;
       color: white;
       font-size: 35px;
@@ -91,7 +95,7 @@ a:hover, a:focus, .active a{
       height: 50%;
   }
 
-  p {
+  .intp {
     margin: 10px;
     padding: 10px;
     /* border: solid 5px #000000; */
@@ -113,6 +117,10 @@ a:hover, a:focus, .active a{
       text-align: center;
       font-size: 25px;
       padding: 25px 0px;
+  }
+
+  b {
+      font-weight: 800;
   }
 
     /* Navbar section */
@@ -160,6 +168,59 @@ a:hover, a:focus, .active a{
   }
 
 
+
+   .masonry {
+      column-count: 2;
+      gap: 1em;
+      /* margin-left: auto; */
+    margin-right: auto;
+    padding-top: 1.5em;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+    max-width: 1080px;
+  }
+
+  .artwork {
+    background-color: #eee;
+    display: inline-block;
+    margin: 0 0 1em;
+    width: 100%;
+}
+
+  /* Projects */
+  .allCards {
+    display: grid;
+    grid-template-columns: auto;
+    width: 75%;
+    margin: auto;
+    padding-bottom: 50px;
+    column-gap: 1em;
+    row-gap: 1.5em;
+}
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }
+
+img {
+    border-radius: 8px;
+}
+
+
   
 
 
@@ -167,18 +228,38 @@ a:hover, a:focus, .active a{
 
     .header_logo {
         margin-left: 10px;
-        height: 100px;
-        width: 75px;
+        height: 75px;
+        width: 56.5px;
+        margin-bottom: 0;
     } 
     .header_title {
         text-align: center; 
         display: inline-block;
+    }
+
+    h1 {
+        padding: 7px 0;
     }
     .nav_links{
         display: flex;
         justify-content: center;
         flex-direction: row;
     }
+    /* Personal */
+    .masonry {
+        column-count: 3;
+    }
+
+    .artwork {
+        margin: 0 0 1em;
+    }
+
+    /* Project */
+    .allCards{
+        grid-template-columns: auto auto;
+    }
+
+
 
 }
 
@@ -191,9 +272,10 @@ a:hover, a:focus, .active a{
     }
 
     .header_logo {
-        margin-left: 10px;
-        height: 100px;
-        width: 75px;
+        margin: 10px;
+        margin-left: 12px;
+        height: 75px;
+        width: 56.5px;
     }
 
     .header_title {
@@ -202,11 +284,32 @@ a:hover, a:focus, .active a{
         display: inline-block;
     }
 
-    nav li {
+    /* nav li {
         margin-bottom: 15px;
+    } */
+
+    .nav_links {
+        margin-top: 15px;
+        margin-bottom: 0;
     }
 
+    /* Personal */
+    .masonry {
+        /* need to change this to 4 */
+        column-count: 3;
+        margin-right: auto;
+        margin-left: auto;
+    }
 
+    .artwork {
+        margin: 0 0 1em;
+        /* margin: 0 1em 1em 0; */
+    }
+
+    .allCards{
+        grid-template-columns: auto auto auto;
+    }
+  
 }
 
 
