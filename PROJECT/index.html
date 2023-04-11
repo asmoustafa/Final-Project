@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <!-- bootstrap -->
+    <link href= "https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+        rel="stylesheet" integrity=
+"sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+        crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <title>Aafaf Moustafa Portfolio</title>
+
+
+</head>
+<body>
+    <a class = "skip" href ="#main">Skip to Main Content</a>
+    <header>
+        <img class="header_logo" src="images/logo3.png" alt="ASM">
+        <h1 class = "header_title"> Aafaf Sophia Moustafa </h1>
+        
+        <nav>
+            <ul class = "nav_links">
+                <li class = "active nav_item"><a href="index.html">About Me</a></li>
+                <li class = nav_item><a href="projects.html">Projects</a></li>
+                <li class = nav_item><a href="personal.html">Personal</a></li>
+              </ul>
+          </nav>
+      </header>
+  <!-- change ids to classes -->
+    <main class = "main" id="main">
+        <div class = par>
+            <!-- <img class = "background_img" src="images/background_img.jpeg" alt="Decorative image swirls on neutral background"> -->
+            <div class="grid intro" >
+                <img class = "intro_photo" src="images/intro_img.jpg" alt="Photo of me in a football field">
+                <p class="intp" tabindex="0" id = "main"> Aafaf Moustafa is a current sophomore at the University of Michigan Ann Arbor, pursuing a bachelors in Computer Science and a minor in User Experience Design. </p>
+                <a href="docs/Moustafa_Aafaf_Resume.pdf" target ="_blank">Resume</a>
+
+          </div>
+        </div>
+
+        
+
+        <h2 id = "gallery">Skills</h2>
+        <div class="gallery"> 
+            <div>
+                <b class="top">HTML 5</b>
+                <img class="image1" src="images/html5.png" alt="html5 logo" />
+                <b class = bot>HTML 5</b>
+            </div>
+          <div>
+            <b class = top>C++</b>
+            <img class="image2" src="images/c++.jpeg" alt="c++ logo" />
+            <b class = bot>C++</b>
+          </div>
+          <div> 
+            <b class = top>CSS 3</b>
+            <img class="image3" src="images/css3.jpeg" alt="Css 3" />
+            <b class = bot>CSS 3</b>
+          </div>
+          <div>
+            <b class = top>JavaScript</b>
+            <img class="image4" src="images/js.jpeg" alt="JavaScript logo" />
+            <b class = bot>JavaScript</b>
+          </div>
+          <div>
+            <b class = top>Python</b>
+            <img class="image5" src="images/python.png" alt="Python logo" />
+            <b class = bot>Python</b>
+          </div>
+          <div>
+            <b class = top>Rstudio</b>
+            <img class="image6" src="images/rstudio.png" alt="Rstudio logo" />
+            <b class = bot>Rstudio</b>
+          </div>
+            
+            
+        </div>
+
+        
+
+        <!-- <h2> BLAH</h2> -->
+
+        <p class="moreP" tabindex="0"> Aafaf is currenly seeking internships in both Software Engineering as well as UX design for the summer of 2023. If you have a position in mind please feel free to reach out!</p>
+
+        
+
+        <h2 tabindex="0">Let's Connect!</h2>
+        <!-- form -->
+
+        <!-- How do i get this to be a working form?? -->
+
+        <div class="form_container">
+            <form action="https://formspree.io/f/mnqrepev" method="POST">
+          
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name">
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name">
+
+              <label for="business">Business Name</label>
+              <input type="text" id="business" name="business" placeholder="Your business name">
+          
+              <label for="int_type">Type</label>
+              <select id="int_type" name="int_type">
+                <option value="software">Software Engineering</option>
+                <option value="ux">Ux Design</option>
+                <option value="other">Other</option>
+              </select>
+          
+              <label for="subject">Notes</label>
+              <textarea id="subject" name="subject" placeholder="Write something..." style="height:200px"></textarea>
+          
+              <input type="submit" value="Submit">
+          
+            </form>
+          </div>
+
+
+        <img class="image7" src="images/black_logo.png" alt="Black Logo" tabindex="0"/>
+
+    
+    </main>
+
+    <div class="footer-basic">
+        <footer>
+            <div class="social"><a tabindex="0" href="https://www.linkedin.com/in/aafaf-moustafa-269506255/" target ="_blank">
+                <img src="images/linkedin.jpeg" alt="LinkedIn Link">
+                 <i class="icon ion-social-instagram"></i>
+                </a>
+              </div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="index.html">Home</a></li>
+                <li class="list-inline-item"><a href="projects.html">Projects</a></li>
+                <li class="list-inline-item"><a href="personal.html">Personal</a></li>
+            </ul>
+            <p class="copyright" tabindex="0">Aafaf Moustafa © 2022</p>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+    <!-- credit to https://epicbootstrap.com/snippets/footer-basic -->
+
+
+<!-- <script src="js/morestyle.js"></script> -->
+    
+</body>
+</html>
